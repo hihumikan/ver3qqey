@@ -35,11 +35,15 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    "@nuxtjs/yandex-metrika"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+  yandexMetrika: {
+    id: "76509142"
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
