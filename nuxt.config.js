@@ -48,7 +48,15 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en"
+      name: "qqey.net",
+      lang: "ja",
+      short_name: "qqey.net",
+      title: "qqey.net",
+      "og:title": "qqey.net",
+      description: "qqey.net",
+      "og:description": "qqey.net",
+      theme_color: "#212121",
+      background_color: "#212121"
     }
   },
 
