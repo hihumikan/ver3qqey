@@ -36,19 +36,14 @@ export default {
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
-    "@nuxtjs/yandex-metrika",
-    {
-      id: "76509142",
-      webvisor: true
-      // clickmap: true,
-      // useCDN: false,
-      // trackLinks: true,
-      // accurateTrackBounce: true,
-    }
+    "@nuxtjs/yandex-metrika"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+  yandexMetrika: {
+    id: "76509142"
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
