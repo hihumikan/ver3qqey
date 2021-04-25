@@ -37,24 +37,20 @@
               <h3 class="font-weight-bold ml-8 mb-2">
                 ご連絡はTwitterまでお願いします。
               </h3>
-              <v-card
-                class="d-flex justify-space-around mb-6 mt-8"
-                :color="white"
-                flat
-                tile
-              >
-                <div
+              <v-card-text class="pt-5 pb-5 d-flex justify-space-around">
+                <v-btn
                   v-for="item in items"
                   :key="item"
-                  class="pa-2"
-                  outlined
-                  tile
+                  class="pt-0 mx-6"
+                  icon
+                  color="#4a4a4a"
+                  :href="item.url"
                 >
-                  <v-btn color="black" icon>
-                    <v-icon size="50px">{{ item.icon }}</v-icon>
-                  </v-btn>
-                </div>
-              </v-card>
+                  <v-icon :style="item.vlue" size="60px">
+                    {{ item.icon }}
+                  </v-icon>
+                </v-btn>
+              </v-card-text>
             </v-card-text>
           </v-card>
         </v-row>
@@ -70,15 +66,18 @@ export default {
       items: [
         {
           icon: "mdi-twitter",
-          url: "https://twitter.com/",
+          url: "https://twitter.com/mikan_54951",
+          vlue: "color:#2e2e2e",
         },
         {
           icon: "mdi-github",
-          url: "https://github.com/",
+          url: "https://github.com/hihumikan",
+          vlue: "color:#2e2e2e",
         },
         {
           icon: "mdi-telegram",
-          url: "",
+          url: "https://t.me/yata_touka",
+          vlue: "color:#2e2e2e",
         },
       ],
     };
