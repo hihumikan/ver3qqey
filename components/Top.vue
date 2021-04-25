@@ -1,20 +1,21 @@
 <template>
-  <div>
-    <section id="about-me">
-      <div class="py-12"></div>
+  <div v-cloak>
+    <transition appear>
+      <section id="about-me">
+        <div class="py-12"></div>
 
-      <v-container class="text-center">
-        <transition appear>
+        <v-container class="text-center">
           <h1 class="display-3 font-weight-bold mb-3">{{ message }}</h1>
-        </transition>
-        <br />
-        <NuxtLink to="/about" style="text-decoration: none">
-          <v-btn class="mx-2" dark color="black"> About me </v-btn>
-        </NuxtLink>
-      </v-container>
 
-      <div class="py-12"></div>
-    </section>
+          <br />
+          <NuxtLink to="/about" style="text-decoration: none">
+            <v-btn class="mx-2" dark color="black"> About me </v-btn>
+          </NuxtLink>
+        </v-container>
+
+        <div class="py-12"></div>
+      </section>
+    </transition>
   </div>
 </template>
 
@@ -34,11 +35,10 @@ export default {
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: 1.6s ease-out;
+  transition: 0.5s ease-out;
 }
 .v-enter,
 .v-leave-to {
   opacity: 0;
-  transform: translateY(-30px);
 }
 </style>
