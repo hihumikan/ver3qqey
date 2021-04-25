@@ -3,7 +3,7 @@
   <v-container class="mt-4">
     <v-row justify="space-around">
       <v-card width="90%">
-        <v-img height="200px" src="/back.png">
+        <v-img height="200px" src="/back-min.png">
           <v-app-bar flat color="rgba(0, 0, 0, 0)">
             <v-toolbar-title class="title white--text pl-0">
               About me

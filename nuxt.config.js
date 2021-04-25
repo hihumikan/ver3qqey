@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - ver3qqey",
-    title: "ver3qqey",
+    titleTemplate: "%s - Homepage",
+    title: "qqey.net",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
