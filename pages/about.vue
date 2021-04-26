@@ -8,7 +8,7 @@
             <v-img height="200px" src="/back-min.png">
               <v-app-bar flat color="rgba(0, 0, 0, 0)">
                 <v-toolbar-title class="title white--text pl-0">
-                  About me
+                  About
                 </v-toolbar-title>
 
                 <v-spacer></v-spacer>
@@ -31,9 +31,22 @@
             </v-img>
 
             <v-card-text>
+              <h2 class="heading08"><span>About me</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">
                 フロントエンドとかバックエンド、インフラのあれこれやってます。
               </h3>
+              <h2 class="heading08"><span>Skills</span></h2>
+              <h3 class="font-weight-bold ml-8 mb-2">
+                Vue.js / Nuxt.js / JavaScript / Ruby on Rails / C / NetWork /
+                etc...
+              </h3>
+              <h2 class="heading08"><span>Products</span></h2>
+
+              <h3 class="font-weight-bold ml-8 mb-2">
+                <a href="https://github.com/hihumikan">GitHub</a>をご覧下さい。
+              </h3>
+
+              <h2 class="heading08"><span>Contact / Accounts</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">
                 ご連絡はTwitterまでお願いします。
               </h3>
@@ -98,6 +111,30 @@ export default {
 
 
 <style>
+.heading08 {
+  font-size: 26px;
+}
+h2 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.heading08 span {
+  display: flex;
+  align-items: center;
+  color: #202020;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.heading08 span::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+  height: 1px;
+  background-color: #000000;
+}
 .v-enter-active,
 .v-leave-active {
   transition: 0.5s ease-out;
