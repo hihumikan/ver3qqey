@@ -31,7 +31,8 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "~/assets/icon.png"
+        content:
+          "https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
@@ -75,8 +76,8 @@ export default {
       short_name: "qqey.net",
       title: "qqey.net",
       "og:title": "qqey.net",
-      description: "qqey.net",
-      "og:description": "qqey.net",
+      description: "hihumikanのホームページです。",
+      "og:description": "hihumikanのホームページです。",
       theme_color: "#212121",
       background_color: "#212121"
     }
