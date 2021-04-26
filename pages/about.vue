@@ -48,7 +48,7 @@
 
               <h2 class="heading08"><span>Contact / Accounts</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">
-                ご連絡はTwitterまでお願いします。
+                ご連絡はTwitterかTelegramまでお願いします。
               </h3>
               <v-card-text class="pt-5 pb-5 d-flex justify-space-around">
                 <v-btn
