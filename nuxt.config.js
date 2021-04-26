@@ -11,11 +11,28 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content: "hihumikanのホームページです。"
+      },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@mikan_54951" },
-      { name: "twitter:card", content: "summary" },
-      { name: "og:image", content: "~/assets/icon.png" }
+      { name: "twitter:creator", content: "@mikan_54951" },
+      { hid: "og:site_name", property: "og:site_name", content: "qqey.net" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://qqey.net/" },
+      { hid: "og:title", property: "og:title", content: "qqey.net" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "hihumikanのホームページです"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "~/assets/icon.png"
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
