@@ -11,7 +11,13 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "" },
+      { name="twitter:card" ,content="summary"},
+      { name="twitter:site" ,content="@mikan_54951"},
+      { property="og:url",content="https://qqey.net/"},
+      { property="og:title",content="qqey.net"},
+      { property="og:description",content="hihumikanのホームページです。"},
+      { property="og:image",content="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"},
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
