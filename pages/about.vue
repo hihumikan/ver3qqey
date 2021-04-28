@@ -95,17 +95,6 @@ export default {
       ],
     };
   },
-  methods: {
-    twitter: function () {
-      window.open("https://twitter.com/mikan_54951");
-    },
-    github: function () {
-      window.open("https://github.com/hihumikan");
-    },
-    telegram: function () {
-      window.open("https://t.me/yata_touka");
-    },
-  },
 };
 </script>
 
