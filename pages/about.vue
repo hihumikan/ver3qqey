@@ -89,6 +89,11 @@ export default {
           url: "https://t.me/yata_touka",
           vlue: "color:#2e2e2e",
         },
+        {
+          icon: "mdi-post-outline",
+          url: "https://blog.qqey.net",
+          vlue: "color:#2e2e2e",
+        },
       ],
     };
   },
