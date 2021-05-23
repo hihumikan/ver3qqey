@@ -4,7 +4,7 @@
       <v-container class="mt-15">
         <v-row justify="space-around">
           <v-card width="95%">
-            <v-img height="200px" src="/back-min.png">
+            <v-img height="220px" src="/back-min.png">
               <v-app-bar flat color="rgba(0, 0, 0, 0)">
                 <v-toolbar-title class="title white--text pl-0">
                   About me
@@ -14,12 +14,20 @@
               </v-app-bar>
 
               <v-card-title class="white--text mt-4">
-                <v-avatar size="100">
-                  <img
-                    alt="user"
-                    src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
-                  />
-                </v-avatar>
+                <v-progress-circular
+                  :rotate="180"
+                  :size="120"
+                  :width="5"
+                  :value="value"
+                  color="red"
+                >
+                  <v-avatar size="100">
+                    <img
+                      alt="user"
+                      src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
+                    />
+                  </v-avatar>
+                </v-progress-circular>
                 <p class="ml-7 mt-5">hihumikan</p>
               </v-card-title>
             </v-img>
@@ -79,7 +87,20 @@ export default {
           vlue: "color:#2e2e2e",
         },
       ],
+      interval: {},
+      value: 0,
     };
+  },
+  beforeDestroy() {
+    clearInterval(this.interval);
+  },
+  mounted() {
+    this.interval = setInterval(() => {
+      if (this.value === 100) {
+        return (this.value = 100);
+      }
+      this.value += 100;
+    }, 1000);
   },
 };
 </script>
