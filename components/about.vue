@@ -1,7 +1,7 @@
 <template>
   <div v-cloak>
     <transition appear>
-      <v-container class="mt-4">
+      <v-container class="mt-15">
         <v-row justify="space-around">
           <v-card width="95%">
             <v-img height="200px" src="/back-min.png">
