@@ -5,24 +5,20 @@
       <v-container class="mt-4">
         <v-row justify="space-around">
           <v-card width="90%">
-            <v-img height="200px" src="/back-min.png">
+            <v-img height="200px" src="/back-min2.png">
               <v-app-bar flat color="rgba(0, 0, 0, 0)">
                 <v-toolbar-title class="title white--text pl-0">
-                  About
+                  About me
                 </v-toolbar-title>
 
                 <v-spacer></v-spacer>
-                <Nuxt-link to="/" style="text-decoration: none">
-                  <v-btn color="white" icon>
-                    <v-icon>mdi-home</v-icon>
-                  </v-btn>
-                </Nuxt-link>
               </v-app-bar>
 
               <v-card-title class="white--text mt-4">
-                <v-avatar size="90">
+                <v-avatar size="100">
                   <img
                     alt="user"
+                    rel="preload"
                     src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
                   />
                 </v-avatar>
@@ -39,18 +35,13 @@
               <h3 class="font-weight-bold ml-8 mb-2">
                 Vue.js / Nuxt.js / JavaScript / C
               </h3>
-              <h2 class="heading08"><span>Products</span></h2>
-
-              <h3 class="font-weight-bold ml-8 mb-2">
-                <a href="https://github.com/hihumikan">GitHub</a>をご覧下さい。
-              </h3>
 
               <h2 class="heading08"><span>Contact / Accounts</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">Twitterに居ます</h3>
               <v-card-text class="pt-5 pb-5 d-flex justify-space-around">
                 <v-btn
                   v-for="item in items"
-                  :key="item"
+                  :key="item.icon"
                   class="pt-0 mx-6"
                   icon
                   color="#4a4a4a"
@@ -82,11 +73,6 @@ export default {
         {
           icon: "mdi-github",
           url: "https://github.com/hihumikan",
-          vlue: "color:#2e2e2e",
-        },
-        {
-          icon: "mdi-telegram",
-          url: "https://t.me/yata_touka",
           vlue: "color:#2e2e2e",
         },
         {
