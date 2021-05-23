@@ -15,11 +15,57 @@
 
               <v-card-title class="white--text mt-0">
                 <v-progress-circular
+                  v-if="posts == 'online'"
                   :rotate="-90"
                   :size="120"
                   :width="5"
                   :value="value"
-                  color="#ffffff"
+                  color="white"
+                >
+                  <v-avatar size="100">
+                    <img
+                      alt="user"
+                      src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
+                    />
+                  </v-avatar>
+                </v-progress-circular>
+                <v-progress-circular
+                  v-else-if="posts == 'dnd'"
+                  :rotate="-90"
+                  :size="120"
+                  :width="5"
+                  :value="value"
+                  color="white"
+                >
+                  <v-avatar size="100">
+                    <img
+                      alt="user"
+                      src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
+                    />
+                  </v-avatar>
+                </v-progress-circular>
+                <v-progress-circular
+                  v-else-if="posts == 'offline'"
+                  :rotate="-90"
+                  :size="120"
+                  :width="5"
+                  :value="value"
+                  color="gray"
+                >
+                  <v-avatar size="100">
+                    <img
+                      alt="user"
+                      src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
+                    />
+                  </v-avatar>
+                </v-progress-circular>
+                <v-progress-circular
+                  v-else
+                  :rotate="-90"
+                  :size="120"
+                  :width="5"
+                  :value="value"
+                  color="white"
                 >
                   <v-avatar size="100">
                     <img
@@ -43,7 +89,6 @@
               </h3>
               <h2 class="heading08"><span>Contact / Accounts</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">Twitterに居ます</h3>
-              <p class="tetete">Discord : {{ posts }}</p>
               <v-card-text class="pt-15 pb-5 d-flex justify-space-around">
                 <v-btn
                   v-for="item in items"
@@ -111,11 +156,11 @@ export default {
 };
 </script>
 
-
 <style>
 .heading08 {
   font-size: 26px;
 }
+
 h2 {
   margin-bottom: 10px;
   margin-top: 20px;
@@ -137,14 +182,17 @@ h2 {
   height: 1px;
   background-color: #000000;
 }
+
 .v-enter-active,
 .v-leave-active {
   transition: 0.5s ease-out;
 }
+
 .v-enter,
 .v-leave-to {
   opacity: 0;
 }
+
 .tmp {
   background-color: white;
   border-radius: 3rem;
@@ -155,9 +203,11 @@ h2 {
   text-decoration: none;
   transition: 1s;
 }
+
 .tmp:hover {
   background-color: rgb(219, 219, 219);
 }
+
 .tetete {
   color: white;
 }
