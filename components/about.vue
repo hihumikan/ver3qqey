@@ -3,7 +3,7 @@
     <transition appear>
       <v-container class="mt-4">
         <v-row justify="space-around">
-          <v-card width="90%">
+          <v-card width="95%">
             <v-img height="200px" src="/back-min.png">
               <v-app-bar flat color="rgba(0, 0, 0, 0)">
                 <v-toolbar-title class="title white--text pl-0">
@@ -36,7 +36,7 @@
 
               <h2 class="heading08"><span>Contact / Accounts</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">Twitterに居ます</h3>
-              <v-card-text class="pt-5 pb-5 d-flex justify-space-around">
+              <v-card-text class="pt-15 pb-5 d-flex justify-space-around">
                 <v-btn
                   v-for="item in items"
                   :key="item.icon"
@@ -45,7 +45,7 @@
                   color="#4a4a4a"
                   :href="item.url"
                 >
-                  <v-icon :style="item.vlue" size="60px">
+                  <v-icon class="tmp" :style="item.vlue" size="60px">
                     {{ item.icon }}
                   </v-icon>
                 </v-btn>
@@ -117,5 +117,18 @@ h2 {
 .v-enter,
 .v-leave-to {
   opacity: 0;
+}
+.tmp {
+  background-color: white;
+  border-radius: 3rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  letter-spacing: 0.1rem;
+  padding: 2.1rem 2.1rem;
+  text-decoration: none;
+  transition: 1s;
+}
+.tmp:hover {
+  background-color: rgb(219, 219, 219);
 }
 </style>
