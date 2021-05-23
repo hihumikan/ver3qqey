@@ -41,9 +41,9 @@
               <h3 class="font-weight-bold ml-8 mb-2">
                 Vue.js / Nuxt.js / JavaScript / C
               </h3>
-
               <h2 class="heading08"><span>Contact / Accounts</span></h2>
               <h3 class="font-weight-bold ml-8 mb-2">Twitterに居ます</h3>
+              <p class="tetete">Discord : {{ posts }}</p>
               <v-card-text class="pt-15 pb-5 d-flex justify-space-around">
                 <v-btn
                   v-for="item in items"
@@ -67,6 +67,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -89,6 +90,7 @@ export default {
       ],
       interval: {},
       value: 0,
+      posts: [],
     };
   },
   beforeDestroy() {
@@ -101,6 +103,10 @@ export default {
       }
       this.value += 100;
     }, 40);
+    axios
+      .get("https://discord.com/api/guilds/756169016741068974/widget.json")
+      .then((response) => (this.posts = response.data.members[0].status));
+    console.log();
   },
 };
 </script>
@@ -151,5 +157,8 @@ h2 {
 }
 .tmp:hover {
   background-color: rgb(219, 219, 219);
+}
+.tetete {
+  color: white;
 }
 </style>
