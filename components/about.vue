@@ -4,7 +4,7 @@
       <v-container class="mt-8">
         <v-row justify="space-around">
           <v-card width="95%">
-            <v-img height="220px" src="/back-min.png">
+            <v-img height="225px" src="/back-min.png">
               <v-app-bar flat color="rgba(0, 0, 0, 0)">
                 <v-toolbar-title class="title white--text pl-0">
                   About me
@@ -15,7 +15,7 @@
 
               <v-card-title class="white--text mt-4">
                 <v-progress-circular
-                  :rotate="180"
+                  :rotate="-90"
                   :size="120"
                   :width="5"
                   :value="value"
@@ -100,7 +100,7 @@ export default {
         return (this.value = 100);
       }
       this.value += 100;
-    }, 1000);
+    }, 40);
   },
 };
 </script>
