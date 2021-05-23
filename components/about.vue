@@ -1,11 +1,10 @@
-
 <template>
   <div v-cloak>
     <transition appear>
       <v-container class="mt-4">
         <v-row justify="space-around">
           <v-card width="90%">
-            <v-img height="200px" src="/back-min2.png">
+            <v-img height="200px" src="/back-min.png">
               <v-app-bar flat color="rgba(0, 0, 0, 0)">
                 <v-toolbar-title class="title white--text pl-0">
                   About me
@@ -18,7 +17,6 @@
                 <v-avatar size="100">
                   <img
                     alt="user"
-                    rel="preload"
                     src="https://avatars.githubusercontent.com/u/26848713?s=460&u=b5c630322f32d86c35ec2a62469f36502755d83c&v=4"
                   />
                 </v-avatar>
