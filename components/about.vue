@@ -1,7 +1,7 @@
 <template>
   <div v-cloak>
     <transition appear>
-      <v-container class="mt-8">
+      <v-container class="mt-5">
         <v-row justify="space-around">
           <v-card width="95%">
             <v-img height="225px" src="/back-min.png">
@@ -13,7 +13,7 @@
                 <v-spacer></v-spacer>
               </v-app-bar>
 
-              <v-card-title class="white--text mt-4">
+              <v-card-title class="white--text mt-0">
                 <v-progress-circular
                   :rotate="-90"
                   :size="120"
