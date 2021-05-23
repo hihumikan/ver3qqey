@@ -19,7 +19,7 @@
                   :size="120"
                   :width="5"
                   :value="value"
-                  color="red"
+                  color="#ffffff"
                 >
                   <v-avatar size="100">
                     <img
