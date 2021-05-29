@@ -20,7 +20,7 @@
                   :size="120"
                   :width="5"
                   :value="value"
-                  color="green"
+                  color="white"
                 >
                   <v-avatar size="100">
                     <img
@@ -65,7 +65,7 @@
                   :size="120"
                   :width="5"
                   :value="value"
-                  color="yellow"
+                  color="white"
                 >
                   <v-avatar size="100">
                     <img
